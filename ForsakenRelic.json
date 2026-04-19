@@ -1,0 +1,11 @@
+{
+  "id": "ForsakenRelic",
+  "name": "A Forsaken Relic, The Last Hope",
+  "author": "moonSlime",
+  "description": "Adds a single relic, based on the themes of a friend's OC. As a birthday gift to them.",
+  "version": "v1.0.0",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": ["BaseLib"],
+  "affects_gameplay": true
+}
