@@ -49,7 +49,7 @@ public class ForsakenSword() : ForsakenRelic
         await Cmd.CustomScaledWait(0.2f, 0.4f);
         foreach (Creature hittableEnemy in (IEnumerable<Creature>) twistedFunnel.Owner.Creature.CombatState.HittableEnemies)
         {
-            PoisonPower poisonPower = await PowerCmd.Apply<PoisonPower>(hittableEnemy, (Decimal) twistedFunnel.DynamicVars["PoisonPower"].IntValue, twistedFunnel.Owner.Creature, (CardModel) null);
+            PoisonPower poisonPower = await PowerCmd.Apply<PoisonPower>(choiceContext, hittableEnemy, twistedFunnel.DynamicVars.Poison.BaseValue, twistedFunnel.Owner.Creature, null);
         }
     }
     
